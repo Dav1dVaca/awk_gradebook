@@ -29,3 +29,7 @@ Tomas      163
 Sam        152
 Ava        172
 Chelsey    142
+
+## Task 4
+awk -F',' 'NR>1 && $4 < ($5*0.60){count++} END{print count}' Lab03-data.csv
+50 
