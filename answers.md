@@ -8,3 +8,7 @@ Result:
 
 Explanation:
 The script skips the header using NR>1, counts each submission and prints the total number of submissions in the END block.
+
+## Task 2
+awk -F',' 'NR>1{seen[$1]=1} END{for(s in seen) count++; print count}' Lab03-data.csv
+14
