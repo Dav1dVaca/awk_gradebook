@@ -66,3 +66,28 @@ L04        25         50         40.36
 
 Explanation:
 The script uses associative arrays indexed by assignment name to calculate the minimum score, maximum score and average score for each assignment.
+
+## Task 6
+
+Command:
+awk -f student_grade.awk Lab03-data.csv
+
+Result:
+Student    Percent    Grade
+Tomas      82.22      B    
+Diana      62.08      D    
+Andrew     73.69      C    
+Lucia      89.53      B    
+Kenji      86.45      B    
+Chelsey    62.65      D    
+Eliza      84.16      B    
+Shane      93.12      A    
+Noah       63.08      D    
+Ava        81.43      B    
+Maria      79.57      C    
+Priya      71.04      C    
+Jackson    78.64      C    
+Sam        72.90      C  
+
+Explanation:
+The script accumulates earned points and maximum points for every student. It then calculates the final percentage and assigns a letter grade using an if/else chain.
